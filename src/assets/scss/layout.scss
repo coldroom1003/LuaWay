@@ -1,0 +1,5 @@
+.headerWrap {@include flexbox(start, center); gap: rem(20); background-color: darkseagreen}
+.navWrap {
+    @include flexbox(start, center); gap: rem(8); cursor: pointer;
+    & .navItem {padding: rem(6) rem(8);}
+}
