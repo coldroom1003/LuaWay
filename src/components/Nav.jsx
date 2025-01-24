@@ -5,7 +5,7 @@ const Nav = () => {
     const navigate = useNavigate();
 
     return (
-        <div>
+        <div className="navBtn">
             <ul className="navWrap">
                 <li className="navItem" onClick={() => {navigate("/about");}}>
                     <span>About</span>

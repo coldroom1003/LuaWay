@@ -5,6 +5,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Works from "../pages/Works";
 import Contact from "../pages/Contact";
+import TodoListWrap from "../pages/TodoListWrap";
 
 const Router = () => {
     return (
@@ -13,6 +14,7 @@ const Router = () => {
                 <Route path="about" element={<About />} />
                 <Route path="works" element={<Works />} />
                 <Route path="contact" element={<Contact />} />
+                <Route path="todolist" element={<TodoListWrap />} />
             </Routes>
     );
 };

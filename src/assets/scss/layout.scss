@@ -1,5 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hi+Melody&display=swap');
+.app, button, input {
+    font-family: "Shadows Into Light", "Hi Melody";
+}
+
+.shadows-into-light-regular {
+    font-family: "Shadows Into Light", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.hi-melody-regular {
+    font-family: "Hi Melody", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
 .headerWrap {@include flexbox(start, center); gap: rem(20); background-color: darkseagreen}
+
+.navBtn {
+    position: fixed; top:50%; right: rem(-80); transform: translateY(-50%); padding: rem(10) 0 rem(10) rem(10); 
+    border-top-left-radius: rem(16); border-bottom-left-radius: rem(16); background-color: #B8ABF9; transition: all .3s ease; cursor: pointer;
+    &:hover {right: 0; transition: all .3s ease;}
+}
 .navWrap {
-    @include flexbox(start, center); gap: rem(8); cursor: pointer;
+    @include column-flexbox(start, center); gap: rem(8); width: rem(80); 
     & .navItem {padding: rem(6) rem(8);}
 }
